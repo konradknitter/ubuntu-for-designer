@@ -9,9 +9,7 @@ RUN apt-get install -y python-pip
 RUN apt-get install -y git
 
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
-RUN sudo apt-get install -y nodejs
-RUN sudo apt-get install -y npm
-RUN sudo apt-get install -y node
+RUN apt-get install -y nodejs
 
 RUN pip install sphinxcontrib_plantuml
 RUN pip install sphinx_bootstrap_theme
