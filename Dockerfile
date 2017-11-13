@@ -7,6 +7,7 @@ RUN apt-get install -y graphviz
 RUN apt-get install -y default-jre
 RUN apt-get install -y python-pip
 RUN apt-get install -y git
+RUN apt-get install -y subversion
 
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN apt-get install -y nodejs
