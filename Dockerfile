@@ -14,3 +14,5 @@ RUN apt-get install -y nodejs
 
 RUN pip install sphinxcontrib_plantuml
 RUN pip install sphinx_bootstrap_theme
+
+RUN apt-get install -y sshpass
