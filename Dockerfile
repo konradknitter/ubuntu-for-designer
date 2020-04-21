@@ -1,10 +1,6 @@
 # base image
 FROM ubuntu:18.10
 
-# Proxy settings
-ENV http_proxy=http://10.158.100.9:8080
-ENV https_proxy=http://10.158.100.9:8080
-
 RUN apt-get update && apt-get install -y \
 # Used by GitLab
     git \
@@ -29,5 +25,9 @@ RUN apt-get update && apt-get install -y \
 # Clean apt cache
 && rm -rf /var/lib/apt/lists/* \
 && ln -s /usr/lib/llvm-6.0/lib/libclang.so.1 /usr/lib/libclang.so
+
+# Proxy settings
+ENV http_proxy=http://10.158.100.9:8080
+ENV https_proxy=http://10.158.100.9:8080
 
 CMD ["/bin/bash"]
