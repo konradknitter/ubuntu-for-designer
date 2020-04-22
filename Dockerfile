@@ -15,10 +15,9 @@ RUN apt-get update && apt-get install -y \
     tox \
     curl \
     python3 \
-    python3.6 \
     bubblewrap \
     libffi-dev \
-    python3.6-dev \
+    python3-dev \
     libxslt1-dev \
     libclang1-6.0\
 # Used in Doxygen
