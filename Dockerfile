@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
     git \
 # Used for Static Analysis
     clang-format \
-    python-minimal=2.7.* \
+    python2-minimal \
     wget \
     subversion \
 # Used in running Memcheck
