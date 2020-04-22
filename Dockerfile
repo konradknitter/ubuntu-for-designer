@@ -1,5 +1,5 @@
 # base image
-FROM ubuntu:19.10
+FROM ubuntu:20.04
 
 RUN apt-get update && apt-get install -y \
 # Used by GitLab
