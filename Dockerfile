@@ -1,6 +1,9 @@
 # base image
 FROM ubuntu:20.04
 
+ENV TZ=America/New_York
+ENV DEBIAN_FRONTEND=noninteractive
+
 RUN apt-get update && apt-get install -y \
 # Used by GitLab
     git \
