@@ -23,6 +23,7 @@ RUN apt-get update && apt-get install -y \
     python3-dev \
     libxslt1-dev \
     libclang1-6.0\
+    gcc\
 # Used in Doxygen
     doxygen \
 # Clean apt cache
