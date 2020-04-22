@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y \
 # Used by GitLab
     git \
 # Used for Static Analysis
-    clang-format \
+    clang-format=7.0.* \
     python-minimal=2.7.* \
     wget \
     subversion \
