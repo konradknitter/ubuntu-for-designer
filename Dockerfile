@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y \
     git \
 # Used for Static Analysis
     clang-format \
+    python \
     python2-minimal \
     wget \
     subversion \
