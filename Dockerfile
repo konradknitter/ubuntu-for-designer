@@ -22,7 +22,7 @@ RUN apt-get update && apt-get install -y \
     libffi-dev \
     python3-dev \
     libxslt1-dev \
-    libclang1-6.0\
+    libclang1-6.0 \
     gcc\
 # Used in Doxygen
     doxygen \
