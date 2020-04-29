@@ -28,6 +28,7 @@ RUN apt-get update && apt-get install -y \
 # Used in Doxygen
     doxygen \
     plantuml \
+    texlive \
 # Clean apt cache
 && rm -rf /var/lib/apt/lists/* \
 && ln -s /usr/lib/llvm-6.0/lib/libclang.so.1 /usr/lib/libclang.so
