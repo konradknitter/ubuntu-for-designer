@@ -34,11 +34,13 @@ RUN apt-get update && apt-get install -y \
  # More documentation tools
     default-jre \
     sphinx-common \
-    python-pip \
+    python3-pip \
 # Clean apt cache
 && rm -rf /var/lib/apt/lists/* \
 && ln -s /usr/lib/llvm-6.0/lib/libclang.so.1 /usr/lib/libclang.so
 
+RUN curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py
+RUN python2 get-pip.py
 RUN pip install sphinxcontrib_plantuml
 
 CMD ["/bin/bash"]
