@@ -32,6 +32,7 @@ RUN apt-get update && apt-get install -y \
     texlive-font-utils \
     make \
  # More documentation tools
+    default-jre \
     sphinx-common \
 # Clean apt cache
 && rm -rf /var/lib/apt/lists/* \
