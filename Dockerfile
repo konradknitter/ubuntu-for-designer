@@ -44,5 +44,6 @@ RUN apt-get update && apt-get install -y \
 RUN curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py
 RUN python2 get-pip.py
 RUN pip install sphinxcontrib_plantuml
+RUN pip install sphinx-confluence
 
 CMD ["/bin/bash"]
