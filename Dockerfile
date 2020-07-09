@@ -29,7 +29,9 @@ RUN apt-get update && apt-get install -y \
     doxygen \
     plantuml \
     texlive \
-    texlive-font-utils \
+    texlive-latex-recommended \
+    texlive-fonts-recommended \
+    texlive-latex-extra \
     make \
  # More documentation tools
     default-jre \
