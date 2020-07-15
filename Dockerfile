@@ -38,6 +38,7 @@ RUN apt-get update && apt-get install -y \
     sphinx-common \
     python3-pip \
     latexmk \
+    python-enchant \
   # push
     rsync \
     ssh-client \
