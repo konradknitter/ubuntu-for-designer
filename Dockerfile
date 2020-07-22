@@ -32,6 +32,7 @@ RUN apt-get update && apt-get install -y \
     texlive-latex-recommended \
     texlive-fonts-recommended \
     texlive-latex-extra \
+    texlive-font-utils \
     make \
  # More documentation tools
     default-jre \
