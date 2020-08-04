@@ -39,7 +39,6 @@ RUN apt-get update && apt-get install -y \
     sphinx-common \
     python3-pip \
     latexmk \
-    inkscape \
   # push
     rsync \
     ssh-client \
