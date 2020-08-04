@@ -46,9 +46,15 @@ RUN apt-get update && apt-get install -y \
 && rm -rf /var/lib/apt/lists/* \
 && ln -s /usr/lib/llvm-6.0/lib/libclang.so.1 /usr/lib/libclang.so
 
+RUN add-apt-repository ppa:inkscape.dev/stable
+RUN apt update
+RUN apt install inkscape
+
 RUN curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py
 RUN python2 get-pip.py
 RUN pip install sphinxcontrib_plantuml
 RUN pip install sphinxcontrib-confluencebuilder
+RUN pip install sphinxcontrib-svg2pdfconverter
+RUN pip install cairosvg
 
 CMD ["/bin/bash"]
