@@ -42,6 +42,8 @@ RUN apt-get update && apt-get install -y \
   # push
     rsync \
     ssh-client \
+    python-jinja2 \
+    python3-jinja2 \
 # Clean apt cache
 && rm -rf /var/lib/apt/lists/* \
 && ln -s /usr/lib/llvm-6.0/lib/libclang.so.1 /usr/lib/libclang.so
